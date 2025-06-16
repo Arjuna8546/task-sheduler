@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+
+
+.custom-calendar {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f3f4f6; 
+  border-radius: 16px;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.custom-calendar .react-calendar__navigation__label {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #1f2937; 
+}
+
+.custom-calendar .react-calendar__navigation__arrow {
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.custom-calendar .react-calendar__tile {
+  padding: 1rem;
+  margin: 4px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+
+.custom-calendar .react-calendar__tile {
+  background: #fff;
+  color: #1f2937;
+}
+
+
+.custom-calendar .react-calendar__tile:hover {
+  background-color: #e0f2fe; 
+  color: #0369a1; 
+}
+
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #000000 !important; 
+  color: white !important;
+}
+
+
+.custom-calendar .completed-day {
+  background-color: #16a34a !important;
+  color: white !important;
+}
+
+.custom-calendar .mixed-day {
+  background-color: #facc15 !important;
+  color: black !important;
+}
+
+.custom-calendar .pending-day {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
