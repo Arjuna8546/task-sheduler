@@ -3,9 +3,8 @@ import * as Yup from 'yup'
 import { toast } from 'sonner'
 import { useState } from 'react'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
-import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { signup, verifyotp } from '../endpoints/user_api'
+import { signup} from '../endpoints/user_api'
 import OtpModal from './OtpModal'
 
 
