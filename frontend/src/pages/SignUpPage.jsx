@@ -3,7 +3,7 @@ import * as Yup from 'yup'
 import { toast } from 'sonner'
 import { useState } from 'react'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { signup} from '../endpoints/user_api'
 import OtpModal from './OtpModal'
 
@@ -14,6 +14,7 @@ function SignUpPage() {
     const [showOtpModal, setShowOtpModal] = useState(false)
     const [pendingUserData, setPendingUserData] = useState(null)
     const [loading, setLoading] = useState(false)
+    const nav = useNavigate()
 
     const togglePasswordVisibility = () => setShowPassword(prev => !prev)
     const toggleConfirmPasswordVisibility = () => setShowConfirmPassword(prev => !prev)

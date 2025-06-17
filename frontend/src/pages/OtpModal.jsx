@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { verifyotp, resendotp } from '../endpoints/user_api'
-import { toast } from 'react-toastify'
+import { toast } from 'sonner'
+
 
 const OtpModal = ({ show, pendingUserData, onClose, onSuccess }) => {
     const [otp, setOtp] = useState('')
@@ -19,7 +20,7 @@ const OtpModal = ({ show, pendingUserData, onClose, onSuccess }) => {
             if (success) {
                 onSuccess?.()
             } else {
-                toast.error(message || 'OTP verification failed')
+                toast.success(message || 'OTP verification failed')
             }
         } catch (err) {
             const msg = err?.response?.data?.message || 'OTP verification failed'
