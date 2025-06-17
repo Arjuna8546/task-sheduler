@@ -9,7 +9,7 @@ import { signup, verifyotp } from '../endpoints/user_api'
 import OtpModal from './OtpModal'
 
 
-function SignupPage() {
+function SignUpPage() {
     const [showPassword, setShowPassword] = useState(false)
     const [showConfirmPassword, setShowConfirmPassword] = useState(false)
     const [showOtpModal, setShowOtpModal] = useState(false)
@@ -179,4 +179,4 @@ function SignupPage() {
     )
 }
 
-export default SignupPage
+export default SignUpPage
