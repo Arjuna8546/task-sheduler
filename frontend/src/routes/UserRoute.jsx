@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LoginPage from '../pages/LoginPage'
 import HomePage from '../pages/HomePage'
-import SignupPage from '../pages/SignUpPage'
+import SignUpPage from '../pages/SignUpPage'
 import ProtectedRoute from '../protectedroutes/ProtectedRoute'
 
 
@@ -11,7 +11,7 @@ function UserRoute() {
     <Routes>
         <Route path='login/' element={<LoginPage/>}></Route>
         <Route path='' element={<ProtectedRoute><HomePage/></ProtectedRoute>}></Route>
-        <Route path='signup/' element={<SignupPage/>}></Route>
+        <Route path='signup/' element={<SignUpPage/>}></Route>
     </Routes>
   )
 }
